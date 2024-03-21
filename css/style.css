@@ -110,6 +110,12 @@
    height: auto;
    position: relative;
 }
+/* ====== Медиа 900px ====== */
+@media (max-width: 900px) {
+   .video__box--toggle::after  {
+      display: none;
+   }
+}
 /* ====== Медиа 550px ====== */
 @media (max-width: 550px) {
    .video__box::before {
