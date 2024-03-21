@@ -117,13 +117,7 @@
    }
 }
 /* ====== Медиа 550px ====== */
-@media (max-width: 550px) {
-   .video__box::before {
-      width: 75px;
-      height: 75px;
-      transform: translate(-50%, -50%);
-   }
-}
+/* @media (max-width: 550px) {} */
 /* ============ video / ============ */
 /* ============ catalog ============ */
 .catalog__box {
@@ -697,6 +691,7 @@
 /* ============ claim ============ */
 .claim__box {
    display: flex;
+   align-items: flex-end;
    gap: 4%;
    padding: 50px 0;
    border-top: 2px solid var(--bg-dark);
