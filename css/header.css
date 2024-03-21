@@ -347,21 +347,33 @@
 
 @keyframes main-anime {
   0% {
-    margin-bottom: -600px;
+    margin-left: -600px;
     opacity: 0;
   }
   100% {
-    margin-bottom: 0px;
+    margin-left: 0px;
     opacity: 1;
   }
 }
-.header__cont-main {
+h1 {
   animation-name: main-anime;
-  animation-duration: 1.5s;
+  animation-duration: 3.0s;
 }
 
-/* ====== Медиа 400px ====== */
-@media (max-width: 400px){
 
+
+@keyframes main-box {
+  0% {
+    margin-top: -600px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+.header__main-grup {
+  animation-name: main-box;
+  animation-duration: 3.5s;
 }
 
