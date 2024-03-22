@@ -306,10 +306,10 @@
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
   .header__wrap {
-    padding: 15px 0 90px;
+    padding: 18px 0 90px;
   }
   .header__block-nav {
-    padding: 50px 15px 25px;
+    padding: 18px 15px 25px;
   }
   .header__main h1 {
     font-size: 8vw;
@@ -333,13 +333,16 @@
     align-items: center;
     font-size: 5vw;
     margin: 90px auto 0;
+    padding: 8px 20px 10px;
   }
 }
 /* ====== Медиа 400px ====== */
 @media (max-width: 400px) {
   .header__main-btn {
+    display: flex;
     font-size: 5vw;
     margin-top: 90px;
+
   }
 }
 
