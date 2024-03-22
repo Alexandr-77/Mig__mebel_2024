@@ -28,7 +28,7 @@
       padding-bottom: 15px;
    }
    .stack__box-item:nth-child(2) {
-      padding-left: 12px;
+      padding-left: 15px;
    }
 }
 /* ====== Медиа 768px ====== */
@@ -47,7 +47,6 @@
    }
    .stack__box-item:nth-child(2) {
       border-left: 1px solid #D9D9D9;
-      padding-left: 8px;
    }
 }
 /* ============ stack / ============ */
@@ -80,6 +79,13 @@
    }
    .opim__text {
       font-size: 20px;
+   }
+}
+/* ====== Медиа 450px ====== */
+@media (max-width: 450px) {
+   .opim__text {
+      font-size: 18px;
+      line-height: 140%;
    }
 }
 /* ============ opim / ============ */
@@ -583,8 +589,13 @@
       font-size: 20px;
    }
    .slyd2__box-item {
+      padding: 25px 20px;
       border: 1px solid var(--bg-dark);
   }
+  .slyd2__text {
+   font-size: 18px;
+   line-height: 140%;
+   }
 }
 /* ============ slyd2 / ============ */
 /* ============ service ============ */
@@ -680,10 +691,12 @@
   }
    .service__mintitle {
       font-size: 24px;
+      line-height: 140%;
   }
   .service__text {
-   font-size: 20px;
-}
+   font-size: 18px;
+   line-height: 140%;
+  }
 }
 /* ============ service / ============ */
 /* ============ claim ============ */
@@ -726,9 +739,9 @@
    padding: 0px;
 }
 .claim__btn {
-   width: 100%;
-   font-size: 24px;
-   margin-top: 20px;
+   display: block;
+   font-size: 18px;
+   margin: 20px auto 0;
 }
 /* ====== Медиа 990px ====== */
 @media (max-width: 990px) {
