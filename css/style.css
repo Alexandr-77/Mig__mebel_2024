@@ -4,7 +4,9 @@
 @import url(../css/header.css);
 
 /* ================================== */
-
+.no-scroll {
+   overflow: hidden;
+ }
 /* ============ stack ============ */
 .stack__box {
    display: flex;
@@ -109,7 +111,7 @@
    position: absolute;
    display: block;
    pointer-events: none;
-   z-index: 1;
+   z-index: 100000;
 }
 .video__box-item {
    width: 100%;
@@ -118,9 +120,9 @@
 }
 /* ====== Медиа 900px ====== */
 @media (max-width: 900px) {
-   .video__box--toggle::after  {
+   /* .video__box--toggle::after  {
       display: none;
-   }
+   } */
 }
 /* ====== Медиа 550px ====== */
 /* @media (max-width: 550px) {} */
@@ -468,6 +470,28 @@
   }
 }
 /* ============ workway / ============ */
+/* ============ side ============ */
+.side__box {
+   display: flex;
+   justify-content: center;
+   gap: 2%;
+}
+.side__box-item {
+   width: 24.5%;
+}
+/* ====== Медиа 768px ====== */
+@media (max-width: 768px){
+   .side__box {
+      flex-wrap: wrap;
+      gap: 3vw;
+   }
+   .side__box-item {
+      width: 48%;
+   }
+}
+/* ====== Медиа 550px ====== */
+@media (max-width: 550px){}
+/* ============ side / ============ */
 /* ============ slyder ============ */
 .slyder__box {
    padding-bottom: 75px;
@@ -1011,13 +1035,13 @@
    justify-content: space-between;
    position: absolute;
    width: 100%;
-   min-height: 630px;
-   height: 100%;
+   min-height: 100vh;
    top: 0px;
    left: 0;
    /* background: #cccccc37; */
    padding: 30px 15px 25px; 
    z-index: 1;
+   scroll-margin-top: 700px;
  }
  .footer__menu {
    flex-direction: column;
@@ -1163,12 +1187,14 @@
    .cart__box {
       gap: 10px;
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
   }
   .cart__box-item {
    width: 100%;
-   max-width: 700px;
    }
+  .cart__box-item:nth-child(1) {
+      max-width: 50%;
+  }
   .cart__box-accent {
       gap: 30px;
    }
@@ -1201,6 +1227,12 @@
    font-size: 18px;
    }
 }
+/* ====== Медиа 768px ====== */
+@media (max-width: 768px) {
+   .cart__box-item:nth-child(1) {
+      max-width: 100%;
+  }
+}
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
    .cart__title {
@@ -1209,12 +1241,22 @@
   .cart__price {
    font-size: 24px;
   }
+  .cart__description {
+   font-size: 18px;
+  }
+  .cart__btn-box {
+   display: flex;
+   justify-content: center;
+  }
   .cart__btn {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 24px;
+   font-size: 18px;
+   max-width: 330px;
+   width: 100%;
    }
+   
 }
 /* ====== Медиа 360px ====== */
 @media (max-width: 360px) {
