@@ -25,28 +25,28 @@ function rotateBurger() {
 //   document.body.classList.remove('no-scroll');
 }
 // ========================= burger-foot =========================
-let burgerFoot = document.querySelector('.burger-foot');
-let navFoot = document.querySelector('.footer__nav');
-let liHeaderFoot = document.querySelectorAll('.footer__menu-item');
+// let burgerFoot = document.querySelector('.burger-foot');
+// let navFoot = document.querySelector('.footer__nav');
+// let liHeaderFoot = document.querySelectorAll('.footer__menu-item');
 
-burgerFoot.addEventListener('click', rotateBurgerFoot); 
+// burgerFoot.addEventListener('click', rotateBurgerFoot); 
 
-for(let i = 0; i < liHeaderFoot.length; i++ ) {
-	if (window.innerWidth < 768 ) {
-		liHeaderFoot[i].addEventListener('click', rotateBurgerFoot);
-	}
-}
+// for(let i = 0; i < liHeaderFoot.length; i++ ) {
+// 	if (window.innerWidth < 768 ) {
+// 		liHeaderFoot[i].addEventListener('click', rotateBurgerFoot);
+// 	}
+// }
 
-function rotateBurgerFoot() { 
-	burgerFoot.classList.toggle('burger-foot-active');
-	document.body.classList.toggle('no-scroll');
+// function rotateBurgerFoot() { 
+// 	burgerFoot.classList.toggle('burger-foot-active');
+// 	document.body.classList.toggle('no-scroll');
 
-  if (navFoot.style.display === "flex") {
-    navFoot.style.display = "none";
-  } else {
-    navFoot.style.display = "flex";
-  }
-}
+//   if (navFoot.style.display === "flex") {
+//     navFoot.style.display = "none";
+//   } else {
+//     navFoot.style.display = "flex";
+//   }
+// }
 
 // ============== video =============
 const wrapperVideo = document.querySelector('.video__box');

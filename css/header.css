@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   color: var(--st);
-  width: 330px;
+  width:105px;
   margin-left: 0;
   /* position: relative; */
   z-index: 2;
@@ -244,6 +244,9 @@
   .header__wrap--xx .header__block {
     margin-bottom: 0px;
   }
+  .header__logo {
+    width: 55px;
+  }
   .header__block-nav,
   .header__tellink-top {
     display: none;
@@ -268,6 +271,7 @@
   }
   .header__nav-logo {
     display: inline-block;
+    width: 55px;
   }
   .header__nav-logo img {
     margin: 0;
