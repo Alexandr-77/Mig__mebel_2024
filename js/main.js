@@ -4,7 +4,7 @@ let burger = document.querySelector('.burger');
 let nav = document.querySelector('.header__block-nav');
 let liHeader = document.querySelectorAll('.header__menu-item');
 
-burger.addEventListener('click', rotateBurger); 
+burger.addEventListener('click', rotateBurger);
 
 for(let i = 0; i < liHeader.length; i++ ) {
 	if (window.innerWidth < 990 ) {
@@ -14,12 +14,15 @@ for(let i = 0; i < liHeader.length; i++ ) {
 
 function rotateBurger() { 
   burger.classList.toggle('burger-active');
+  document.body.classList.toggle('no-scroll');
 
   if (nav.style.display === "flex") {
     nav.style.display = "none";
   } else {
     nav.style.display = "flex";
   }
+//   document.body.classList.add('no-scroll');
+//   document.body.classList.remove('no-scroll');
 }
 // ========================= burger-foot =========================
 let burgerFoot = document.querySelector('.burger-foot');
@@ -36,6 +39,7 @@ for(let i = 0; i < liHeaderFoot.length; i++ ) {
 
 function rotateBurgerFoot() { 
 	burgerFoot.classList.toggle('burger-foot-active');
+	document.body.classList.toggle('no-scroll');
 
   if (navFoot.style.display === "flex") {
     navFoot.style.display = "none";
@@ -49,9 +53,33 @@ const wrapperVideo = document.querySelector('.video__box');
 const video = document.querySelector('.video__box-item');
 
 video.addEventListener('click',function() {
-	wrapperVideo.classList.remove("video__box--toggle");
+	wrapperVideo.classList.toggle("video__box--toggle");
+	if (video.paused) {
+		video.play();
+		video.textContent = 'Pause';
+	 } else {
+		video.pause();
+		video.textContent = 'Play';
+	 }
 });
+
+// video.addEventListener('touch',function() {
+// 	video.play
+// 	wrapperVideo.classList.remove("video__box--toggle");
+// });
 // ============== video /=============
+
+// =============== model ==============
+// function openModal(event) {
+// 	event.preventDefault();
+// 	document.body.classList.add('no-scroll');
+// 	document.getElementById('modal').style.display = 'flex';
+// }
+
+// function closeModal() {
+// 	document.body.classList.remove('no-scroll');
+// 	document.getElementById('modal').style.display = 'none';
+// 	}
 
 // ========= slyder slick ==========
 $('.slyder__box').slick({

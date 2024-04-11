@@ -16,6 +16,12 @@
   /* margin-bottom: 50px; */
   margin-bottom: 2.6vw;
 }
+.subtitle-50-700 {
+  /* font-size: 50px; */
+  font-size: 2.6vw;
+  font-weight: 700;
+  line-height: 150%;
+}
 .text50-high {
   font-family: "Inter";
   /* font-size: 50px; */
@@ -53,7 +59,7 @@
   padding: 10px 24px 12px;
   transition: all 0.5s ease;
   border: 2px solid var(--bg-dark);
-  width: 21vw;
+  width: 21.5vw;
 }
 .btn:hover {
   background: #3d3d3d;
@@ -64,6 +70,9 @@
   .subtitle-24-500 {
     font-size: 18px;
   }
+  .btn {
+    font-size: 16px;
+  }
 }
 /* ====== Медиа 1070px ====== */
 @media (max-width: 1070px) {
@@ -71,7 +80,7 @@
     font-size: 20px;
   }
   .subtitle-24-500 {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 /* ====== Медиа 990px ====== */
@@ -84,6 +93,9 @@
 @media (max-width: 768px) {
   .padd {
     padding: 125px 0 0;
+  }
+  .text50-high {
+    font-size: 16px;
   }
 }
 /* ====== Медиа 450px ====== */
