@@ -1656,10 +1656,10 @@
 .contactnum__box {
    display: flex;
    justify-content: flex-end;
-   gap: 2%;
+   gap: 4%;
 }
 .contactnum__box-item {
-   width: 49%;
+   width: 48%;
 }
 .contactnum__list-item {
    font-weight: 500;
@@ -1724,11 +1724,11 @@
 }
 .continfo__box {
    display: flex;
-   gap: 2%;
+   gap: 4%;
    flex-wrap: wrap;
 }
 .continfo__box-item {
-   width: 49%;
+   width: 48%;
    margin-bottom: 100px;
 }
 .continfo__title {
