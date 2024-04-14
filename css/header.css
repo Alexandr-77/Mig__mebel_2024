@@ -377,11 +377,11 @@
 
 @keyframes main-anime {
   0% {
-    margin-bottom: -100%;
+    transform: translate(0, 1000px);
     /* opacity: 0; */
   }
   100% {
-    margin-bottom: 0%;
+    transform: translate(0, 0%);
     /* opacity: 1; */
   }
 }
