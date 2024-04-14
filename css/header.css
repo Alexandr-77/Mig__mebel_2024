@@ -334,7 +334,7 @@
   .header__wrap {
     padding: 20px 0 90px;
   }
-  .header__wrap--xx {
+  .header__wrap.header__wrap--xx  {
     padding: 20px 0 30px;
   }
   .header__block-nav {
@@ -377,22 +377,22 @@
 
 @keyframes main-anime {
   0% {
-    margin-bottom: -600px;
-    opacity: 0;
+    margin-bottom: -100%;
+    /* opacity: 0; */
   }
   100% {
-    margin-bottom: 0px;
-    opacity: 1;
+    margin-bottom: 0%;
+    /* opacity: 1; */
   }
 }
-h1 {
+.header__main-h1 {
   animation-name: main-anime;
   animation-duration: 3.0s;
 }
 
 
 
-@keyframes main-box {
+/* @keyframes main-box {
   0% {
     margin-left: -600px;
     opacity: 0;
@@ -409,7 +409,7 @@ h1 {
 .header__main-grup {
   animation-name: main-box;
   animation-duration: 2.5s;
-}
+} */
 
 /* =========================================== */
 
