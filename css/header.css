@@ -73,6 +73,7 @@
 }
 .header__tellink-top {
   color: var(--st);
+  font-weight: 700;
 }
 .header__tellink-top:hover {
   color: var(--bb);
@@ -202,9 +203,9 @@
   width: 100%;
 }
 .header__main-btn:hover {
-  background: var(--bbb);
+  background: var(--bg-dark);
   color: var(--st);
-  border: 2px solid var(--st);
+  border: 2px solid var(--bg-dark);
 }
 /* ====== Медиа 1400px ====== */
 @media (max-width: 1400px) {
@@ -374,16 +375,13 @@
   }
 }
 
-
-
-
 @keyframes main-anime {
   0% {
-    margin-left: -600px;
+    margin-bottom: -600px;
     opacity: 0;
   }
   100% {
-    margin-left: 0px;
+    margin-bottom: 0px;
     opacity: 1;
   }
 }
@@ -396,17 +394,21 @@ h1 {
 
 @keyframes main-box {
   0% {
-    margin-top: -600px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  50% {
+    margin-left: -600px;
     opacity: 0;
   }
   100% {
-    margin-top: 0px;
+    margin-left: 0px;
     opacity: 1;
   }
 }
 .header__main-grup {
   animation-name: main-box;
-  animation-duration: 3.5s;
+  animation-duration: 2.5s;
 }
 
 /* =========================================== */

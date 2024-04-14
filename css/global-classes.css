@@ -62,7 +62,7 @@
   width: 21.5vw;
 }
 .btn:hover {
-  background: #3d3d3d;
+  background: var(--bg-dark);
   color: var(--st);
 }
 /* ====== Медиа 1400px ====== */
